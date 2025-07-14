@@ -1,48 +1,48 @@
 **📈 Stock Performance Analysis**
 
-📌 Project Objective
+**📌 Project Objective**
 
 The goal of this project is to track and analyze the stock performance of five major companies — IBM, Microsoft, Tesla, Amazon, and Google — using a comprehensive, interactive dashboard. Data is fetched using the Alpha Vantage API, enabling users to gain valuable insights into price trends, volatility, and trading volume.
 
 **⚙️ Project Components**
-1️⃣ Data Extraction
+**1️⃣ Data Extraction**
 Source: Alpha Vantage API
 
-Companies: AMZN, GOOGL, MSFT, IBM, TSLA
+**Companies**: AMZN, GOOGL, MSFT, IBM, TSLA
 
-Data Fields: Open, Close, High, Low, Volume, Moving Averages
+**Data Fields**: Open, Close, High, Low, Volume, Moving Averages
 
-Time Frame: Last 2 years (up to Jan 29, 2025)
+**Time Frame:** Last 2 years (up to Jan 29, 2025)
 
-Tools: Python, following API documentation
+**Tools:** Python, following API documentation
 
-2️⃣ ETL Pipeline
-ETL Process:
+**2️⃣ ETL Pipeline**
+**ETL Process:**
 
-Extract: Pull historical stock data via Python scripts.
+**Extract:** Pull historical stock data via Python scripts.
+**
+Transform:** Feature engineering to calculate:
 
-Transform: Feature engineering to calculate:
+**📈 Price Change:** Close Price − Open Price
+**
+📊 Price Range:** High Price − Low Price
 
-📈 Price Change: Close Price − Open Price
+**🧮 Average Price**: (High + Low + Close) / 3
 
-📊 Price Range: High Price − Low Price
+**⚡ Volatility:** (High − Low) / Close × 100
 
-🧮 Average Price: (High + Low + Close) / 3
+**Libraries Used:** pandas, matplotlib, seaborn for EDA
 
-⚡ Volatility: (High − Low) / Close × 100
-
-Libraries Used: pandas, matplotlib, seaborn for EDA
-
-Load:
+**Load:**
 
 Store cleaned data in a SQL database and visualize using Power BI.
 
-🗄️ Data Storage
+**🗄️ Data Storage**
 Designed a SQL schema to organize stock prices and calculated metrics.
 
 Used SQL queries for aggregations and trend analysis.
 
-📊 Dashboard Highlights (Power BI)
+**📊 Dashboard Highlights (Power BI)**
 Date Table: Derived columns for Year, Month, Week Number, Day Number, and Weekend/Weekday.
 
 KPIs: Close, Open, and Volume with DAX measures for:
@@ -61,16 +61,16 @@ Volatility calculation using standard deviation
 
 Pie chart comparing trading volumes across companies
 
-✅ Key Insights
+**✅ Key Insights**
 Track daily stock fluctuations and volatility.
 
 Compare stock trading volumes to identify the most active stock.
 
 Understand short- and long-term trends through dynamic visuals.
+**
+🧩 Tools & Tech Stack**
+**Data Extraction & ETL:** Python, Pandas, Matplotlib, Seaborn
 
-🧩 Tools & Tech Stack
-Data Extraction & ETL: Python, Pandas, Matplotlib, Seaborn
+**Data Storage:** SQL Database
 
-Data Storage: SQL Database
-
-Dashboard & Visualization: Power BI
+**Dashboard & Visualization: **Power BI
