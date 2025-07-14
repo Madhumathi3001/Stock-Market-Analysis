@@ -1,8 +1,10 @@
-📈 Stock Performance Analysis
+**📈 Stock Performance Analysis**
+
 📌 Project Objective
+
 The goal of this project is to track and analyze the stock performance of five major companies — IBM, Microsoft, Tesla, Amazon, and Google — using a comprehensive, interactive dashboard. Data is fetched using the Alpha Vantage API, enabling users to gain valuable insights into price trends, volatility, and trading volume.
 
-⚙️ Project Components
+**⚙️ Project Components**
 1️⃣ Data Extraction
 Source: Alpha Vantage API
 
