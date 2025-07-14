@@ -5,8 +5,9 @@
 The goal of this project is to track and analyze the stock performance of five major companies — IBM, Microsoft, Tesla, Amazon, and Google — using a comprehensive, interactive dashboard. Data is fetched using the Alpha Vantage API, enabling users to gain valuable insights into price trends, volatility, and trading volume.
 
 **⚙️ Project Components**
+
 **1️⃣ Data Extraction**
-Source: Alpha Vantage API
+**Source:** Alpha Vantage API
 
 **Companies**: AMZN, GOOGL, MSFT, IBM, TSLA
 
@@ -21,11 +22,11 @@ Source: Alpha Vantage API
 
 **Extract:** Pull historical stock data via Python scripts.
 **
-Transform:** Feature engineering to calculate:
+**Transform**:** Feature engineering to calculate:
 
 **📈 Price Change:** Close Price − Open Price
-**
-📊 Price Range:** High Price − Low Price
+****
+📊 Price Range**:** High Price − Low Price
 
 **🧮 Average Price**: (High + Low + Close) / 3
 
@@ -43,9 +44,9 @@ Designed a SQL schema to organize stock prices and calculated metrics.
 Used SQL queries for aggregations and trend analysis.
 
 **📊 Dashboard Highlights (Power BI)**
-Date Table: Derived columns for Year, Month, Week Number, Day Number, and Weekend/Weekday.
+**Date Table:** Derived columns for Year, Month, Week Number, Day Number, and Weekend/Weekday.
 
-KPIs: Close, Open, and Volume with DAX measures for:
+**KPIs:** Close, Open, and Volume with DAX measures for:
 
 Previous Day, Week, Month, and Year Comparisons
 
@@ -68,7 +69,7 @@ Compare stock trading volumes to identify the most active stock.
 
 Understand short- and long-term trends through dynamic visuals.
 **
-🧩 Tools & Tech Stack**
+**🧩 Tools & Tech Stack****
 **Data Extraction & ETL:** Python, Pandas, Matplotlib, Seaborn
 
 **Data Storage:** SQL Database
